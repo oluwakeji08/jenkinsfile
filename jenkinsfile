@@ -1,0 +1,50 @@
+pipeline{
+    agent any
+    stages{
+        stage("one"){
+            steps{
+                echo "buiding first jenkins stage pipeline"
+                echo "using declarative method"
+            }
+        }
+        stage("two"){
+            steps{
+                echo "building second pipleline"
+                echo "declarative"  
+            }
+        }
+        stage("three"){
+            steps{
+                echo "third pipeline stage"
+                input("do you want to proceed?")
+            }
+        }
+        stage("four"){
+            steps{
+                echo "fourth pipeline build-up"
+            }
+        }
+        stage("five"){
+            steps{
+                echo "fifth pipleline buildup"
+                echo "declarative"
+            }
+        }
+        stage("six"){
+            steps{
+                echo "sixth pipeline"
+            }
+        }
+        stage("seven"){
+            steps{
+                echo "seventh pipeline buildup"
+                echo "declarative"
+            }
+        }
+        stage("eight"){
+            steps{
+                echo "eighth pipeline buildup"
+            }
+        }
+    }
+}
