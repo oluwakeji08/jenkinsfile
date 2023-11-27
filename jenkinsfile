@@ -5,6 +5,7 @@ pipeline{
             steps{
                 echo "buiding first jenkins stage pipeline"
                 echo "using declarative method"
+                echo "perfecting my pipeline code"
             }
         }
         stage("two"){
