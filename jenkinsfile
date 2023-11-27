@@ -22,6 +22,7 @@ pipeline{
         stage("four"){
             steps{
                 echo "fourth pipeline build-up"
+                echo "made adjustment to my code"
             }
         }
         stage("five"){
