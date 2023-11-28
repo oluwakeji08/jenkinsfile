@@ -11,7 +11,9 @@ pipeline{
         stage("two"){
             steps{
                 echo "building second pipleline"
-                echo "declarative"  
+                echo "declarative" 
+                input 'wait for interactive to proceed'
+                echo 'i love plntain'
             }
         }
         stage("three"){
